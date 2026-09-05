@@ -1,19 +1,33 @@
-# HELPER × Devin / Cognition — Public Demo
+# HELPER × Cognition / Devin — Evidence-First Demo V2
 
-This repository currently hosts a **simulation-only public demo** prepared to show Cognition / Devin why HELPER is a strong fit for Devin + GPT-6 Astra.
+A public-safe, simulation-only demo prepared to show why HELPER is a serious fit for Devin + GPT-6 Astra.
 
-## What it demonstrates
+## What is different about V2
 
-- 0% HELPER platform fee from aid intended for recipients.
+This is not just a pitch page. It contains a **real deterministic browser invariant harness**. You can deliberately break a declared HELPER law and run the verifier to see the failure. The page never claims those browser checks were executed by Devin or Astra.
+
+The proposed first Devin mission is to take those same laws into the canonical repository and turn them into real unit/property/integration/E2E/security gates with evidence.
+
+## Canonical laws represented
+
+- 0% HELPER platform fee from recipient aid.
 - No operator custody or aid-moving keys.
-- Recipient-signed destinations and route terms treated as immutable.
+- Recipient-signed destinations and route terms stay immutable.
 - Need Confidence, Fraud Risk, and Recipient Authority remain separate.
-- NCG stays in SHADOW mode with `controls_aid=false`.
-- Funding, broadcast, finality, delivery, evidence, proof, dispute, reorg, human decision, appeal, and resolution are separate states.
+- NCG stays SHADOW with `controls_aid=false`.
+- Funding, broadcast, finality, delivery, evidence, proof, dispute, reorg, human decision, appeal, and resolution remain separate.
 - Mainnet and real aid remain disabled.
 
 ## Truth boundary
 
-The needs, values, signatures, state transitions, and Devin console output in this demo are illustrative. They are **not** live recipients, live transactions, production trust decisions, or executed Devin test results.
+All missions and values in the UI are illustrative. This artifact does not represent live recipients, live transactions, production trust decisions, production deployment, or completed Devin/Astra runs.
 
-Open `index.html` for the interactive demo. See `DEMO_SCRIPT.md` for the 90-second walkthrough and `DEVIN_FIRST_TASK.md` for the first bounded Devin mission.
+## Run locally
+
+Open `index.html` directly, or serve it:
+
+```bash
+python3 -m http.server 8080
+```
+
+Then open `http://localhost:8080`.
